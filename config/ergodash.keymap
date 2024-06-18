@@ -33,11 +33,11 @@
  */
 
             bindings = <
-&kp ESC         &kp N1            &kp N2         &kp N3        &kp N4        &kp N5  &kp C_PLAY_PAUSE                         &kp K_CALCULATOR   &kp N6  &kp N7  &kp N8           &kp N9          &kp N0          &kp PSCRN
-&kp TAB         &kp Q             &kp W          &kp E         &kp R         &kp T   &kp C_VOLUME_UP                          &kp C_BLUE_BUTTON  &kp Y   &kp U   &kp I            &kp O           &kp P           &kp SLASH
-&kp CAPSLOCK    &kp A             &kp S          &kp D         &kp F         &kp G   &kp C_VOLUME_DOWN                        &kp BSPC           &kp H   &kp J   &kp K            &kp L           &kp PERIOD      &kp RIGHT_BRACKET
-&kp AT          &kp Z             &kp X          &kp C         &kp V         &kp B                      &kp END    &kp HOME                      &kp N   &kp M   &kp SEMI         &kp MINUS       &kp UP_ARROW    &kp LBKT
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_META  &kp LEFT_ALT  &kp LEFT_ALT          &kp SPACE          &kp ENTER  &kp ENTER  &kp ENTER                  &mo 1   &kp RIGHT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT
+&kp ESC         &kp N1  &kp N2         &kp N3        &kp N4     &kp N5  &kp C_PLAY_PAUSE                        &kp K_CALCULATOR   &kp N6  &kp N7     &kp N8           &kp N9          &kp N0          &kp DEL
+&kp TAB         &kp Q   &kp W          &kp E         &kp R      &kp T   &kp NUBS                                &kp C_BLUE_BUTTON  &kp Y   &kp U      &kp I            &kp O           &kp P           &kp SQT
+&kp CAPSLOCK    &kp A   &kp S          &kp D         &kp F      &kp G   &kp BACKSPACE                           &kp BSPC           &kp H   &kp J      &kp K            &kp L           &kp PERIOD      &kp BACKSLASH
+&kp LEFT_SHIFT  &kp Z   &kp X          &kp C         &kp V      &kp B                     &kp END    &kp HOME                      &kp N   &kp M      &kp DOT          &kp SLASH       &kp UP_ARROW    &kp COMMA
+&kp LCTRL       &mo 1   &kp LEFT_META  &kp LEFT_ALT  &kp SPACE          &kp ENTER         &kp ENTER  &kp ENTER  &kp ENTER                  &kp SPACE  &kp RIGHT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT
             >;
         };
 
@@ -55,11 +55,11 @@
  * .----------------------------------------------------------------------------------------------------------------------.
  */ /* FIXME boot and reset are not yet locale aware */
             bindings = <
-&kp F11  &kp F1       &kp F2      &kp F3  &kp F4  &kp F5  &none                  &none  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F12
-&none    &none        &none       &none   &none   &none   &none                  &none  &none   &none   &none   &none   &none    &none
-&none    &none        &none       &none   &none   &none   &none                  &none  &none   &none   &none   &none   &none    &none
-&trans   &bootloader  &sys_reset  &none   &none   &none          &none   &none          &none   &none   &none   &none   &none    &trans
-&trans   &none        &none       &trans  &trans          &none  &trans  &trans  &none          &trans  &none   &none   &none    &trans
+&none   &kp F1       &kp F2      &kp F3  &kp F4  &kp F5  &none                  &kp F11  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none   &none        &none       &none   &none   &none   &none                  &kp F12  &none   &none   &none   &none   &none    &none
+&none   &none        &none       &none   &none   &none   &none                  &none    &none   &none   &none   &none   &none    &none
+&trans  &bootloader  &sys_reset  &none   &none   &none          &none   &none            &none   &none   &none   &none   &none    &trans
+&trans  &none        &none       &trans  &trans          &none  &trans  &trans  &none            &trans  &none   &none   &none    &trans
             >;
         };
 
